@@ -37,8 +37,8 @@ const Header = () => {
               {link.title}
             </Link>
           ))}
-        <SearchButton />
-        <ThemeSwitch />
+        {/* <SearchButton /> */}
+        {/* <ThemeSwitch /> */}
         <MobileNav />
       </div>
     </header>

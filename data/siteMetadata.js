@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: 'mbappai',
   description: 'Personal garden of Mujahid',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'light', // system, dark or light
   siteUrl: 'https://mbappai.com',
   siteRepo: 'https://github.com/mbappai/blog',
   siteLogo: '/static/images/logo.png',

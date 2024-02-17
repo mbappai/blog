@@ -10,7 +10,7 @@ module.exports = {
     './pages/**/*.{js,ts,tsx}',
     './components/**/*.{js,ts,tsx}',
     './layouts/**/*.{js,ts,tsx}',
-    './data/**/*.mdx',
+    './data/**/*.mdx', 
   ],
   darkMode: 'class',
   theme: {
@@ -24,7 +24,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-work-sans)', ...fontFamily.sans],
       },
-      colors: {
+      colors: { 
         primary: colors.pink,
         gray: colors.gray,
       },

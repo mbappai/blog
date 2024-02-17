@@ -11,15 +11,14 @@ export default function Home({ posts }) {
       <div className="">
 
         <div className=' mt-24 flex flex-col gap-y-6 w-full max-w-3xl'>
-          <h1 className="text-lg font-medium tracking-normal">Welcome to my Digital Garden</h1> 
-          <p className="text-lg font-medium tracking-normal">My name is Mujahid Bappai, a professional virtual assistant on the web.</p>
-          <p className="text-lg font-medium tracking-normal"> This is the little space I carved up for myself on the web for me to dump my thoughts.</p>
+          <h1 className="text-lg font-medium tracking-normal">Welcome to my Digital Garden</h1>  
+          <p className="text-lg font-medium tracking-normal">My name is Mujahid Bappai, a professional virtual assistant on the web. This is the little space I carved up for myself on the web for me to dump my thoughts</p>
           <p className="text-lg font-medium tracking-normal">This is not at all fancy or anything</p>
           <p className="text-lg font-medium tracking-normal">All articles or post you see on this page might or might not be fully formed so please take everything with a grain of salt</p>
         </div>
         
         <div className=" mt-24 ">
-          <h2 className='text-md mb-8 font-bold tracking-wider uppercase'>Writings</h2>
+          <h2 className='text-md mb-8 font-bold tracking-wider uppercase'>Brain dumps</h2>
           <ul >
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((post) => {
