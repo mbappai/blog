@@ -1,7 +1,7 @@
 import 'css/tailwind.css'
 import 'pliny/search/algolia.css'
 
-import { Work_Sans, Rubik } from 'next/font/google'
+import { Work_Sans} from 'next/font/google'
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
@@ -14,6 +14,7 @@ import { Metadata } from 'next'
 const work_sans = Work_Sans({
   subsets: ['latin'],
   display: 'swap',
+  weight:'variable', 
   variable: '--font-work-sans',
 }) 
 
