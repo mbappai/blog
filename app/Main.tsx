@@ -8,18 +8,25 @@ const MAX_DISPLAY = 25
 export default function Home({ posts }) {
   return (
     <>
-      <div className="">
-
-        <div className=' mt-24 flex flex-col gap-y-6 w-full max-w-3xl'>
+      <div>
+        <div className=" mt-24 flex w-full max-w-3xl flex-col gap-y-6">
           <h1 className="text-lg font-medium tracking-normal">Welcome to my Digital Garden</h1>
-          <p className="text-lg font-medium tracking-normal">My name is Mujahid Bappai. This is the little space I carved up for myself on the web for me to dump my thoughts</p>
-          <p className="text-lg font-medium tracking-normal">This is not at all fancy or anything</p>
-          <p className="text-lg font-medium tracking-normal">All articles or post you see on this page might or might not be fully formed so please take everything with a grain of salt</p>
+          <p className="text-lg font-medium tracking-normal">
+            My name is Mujahid Bappai. This is the little space I carved up for myself on the web
+            for me to dump my thoughts
+          </p>
+          <p className="text-lg font-medium tracking-normal">
+            This is not at all fancy or anything
+          </p>
+          <p className="text-lg font-medium tracking-normal">
+            All articles or post you see on this page might or might not be fully formed so please
+            take everything with a grain of salt
+          </p>
         </div>
 
         <div className=" mt-24 ">
-          <h2 className='text-md mb-8 font-bold tracking-wider uppercase'>Brain dumps</h2>
-          <ul >
+          <h2 className="text-md mb-8 font-bold uppercase tracking-wider">Brain dumps</h2>
+          <ul>
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((post) => {
               const { slug, date, title, summary, tags } = post
@@ -27,8 +34,7 @@ export default function Home({ posts }) {
                 <li key={slug} className="py-4">
                   <article>
                     <div className="xl:items-baseline xl:space-y-0">
-
-                      <dl className='sr-only'>
+                      <dl className="sr-only">
                         <dt className="sr-only">Published on</dt>
                         <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                           <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
@@ -36,9 +42,8 @@ export default function Home({ posts }) {
                       </dl>
 
                       <div className="space-y-1 xl:col-span-3">
-
                         <div>
-                          <h3 className="text-lg underline decoration-1 underline-offset-2 font-medium tracking-normal">
+                          <h3 className="text-lg font-medium tracking-normal underline decoration-1 underline-offset-2">
                             <Link
                               href={`/blog/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
@@ -65,7 +70,6 @@ export default function Home({ posts }) {
             })}
           </ul>
         </div>
-
       </div>
 
       {posts.length > MAX_DISPLAY && (

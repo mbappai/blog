@@ -9,11 +9,17 @@ export default function Footer() {
         <div className="mb-3 flex space-x-4">
           {/* <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} /> */}
           {/* <SocialIcon kind="github" href={siteMetadata.github} size={6} /> */}
-          <a target='_blank' href={siteMetadata.github}>Github</a>
+          <a target="_blank" href={siteMetadata.github}>
+            Github
+          </a>
           <div>{` • `}</div>
-          <a target='_blank' href={siteMetadata.linkedin}>Linkedin</a>
+          <a target="_blank" href={siteMetadata.linkedin}>
+            Linkedin
+          </a>
           <div>{` • `}</div>
-          <a target='_blank' href={siteMetadata.twitter}>X</a>
+          <a target="_blank" href={siteMetadata.twitter}>
+            X
+          </a>
           {/* <SocialIcon kind="facebook" href={siteMetadata.facebook} size={6} />
           <SocialIcon kind="youtube" href={siteMetadata.youtube} size={6} /> */}
           {/* <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={6} />
