@@ -8,7 +8,7 @@ const MAX_DISPLAY = 25
 export default function Home({ posts }) {
   return (
     <>
-      <div className='px-2'>
+      <div className="px-2">
         <div className=" mt-10 flex w-full max-w-3xl flex-col gap-y-6">
           <h1 className="text-lg font-medium tracking-normal">Welcome to my Digital Garden</h1>
           <p className="text-lg font-medium tracking-normal">
@@ -23,7 +23,14 @@ export default function Home({ posts }) {
             take everything with a grain of salt
           </p>
           <p className="text-lg font-medium tracking-normal">
-            This is where I first got introduced to the whole concept of a <a className='underline decoration-dotted underline-offset-2 italic' target='_blank' href='https://joelhooks.com/digital-garden'>digital garden</a>
+            This is where I first got introduced to the whole concept of a{' '}
+            <a
+              className="italic underline decoration-dotted underline-offset-2"
+              target="_blank"
+              href="https://joelhooks.com/digital-garden"
+            >
+              digital garden
+            </a>
           </p>
         </div>
 

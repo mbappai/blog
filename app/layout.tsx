@@ -14,9 +14,9 @@ import { Metadata } from 'next'
 const work_sans = Lato({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['400','700','900'],
+  weight: ['400', '700', '900'],
   variable: '--font-work-sans',
-  style:['italic','normal']
+  style: ['italic', 'normal'],
   // variable: '--lat-sans',
 })
 
