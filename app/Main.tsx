@@ -22,6 +22,9 @@ export default function Home({ posts }) {
             All articles or post you see on this page might or might not be fully formed so please
             take everything with a grain of salt
           </p>
+          <p className="text-lg font-medium tracking-normal">
+            This is where I first got introduced to the whole concept of a <a className='underline decoration-dotted underline-offset-2 italic' target='_blank' href='https://joelhooks.com/digital-garden'>digital garden</a>
+          </p>
         </div>
 
         <div className=" mt-24 ">
@@ -43,10 +46,10 @@ export default function Home({ posts }) {
 
                       <div className="space-y-1 xl:col-span-3">
                         <div>
-                          <h3 className="text-lg font-medium tracking-normal underline decoration-1 underline-offset-2">
+                          <h3 className="text-lg font-medium tracking-normal underline decoration-dotted underline-offset-2">
                             <Link
                               href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
+                              className="text-gray-900  dark:text-gray-100"
                             >
                               {title}
                             </Link>
