@@ -1,7 +1,7 @@
 import 'css/tailwind.css'
 import 'pliny/search/algolia.css'
 
-import { Work_Sans } from 'next/font/google'
+import { Work_Sans, Lato } from 'next/font/google'
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
@@ -11,11 +11,13 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 
-const work_sans = Work_Sans({
+const work_sans = Lato({
   subsets: ['latin'],
   display: 'swap',
-  weight: 'variable',
+  weight: ['400','700','900'],
   variable: '--font-work-sans',
+  style:['italic','normal']
+  // variable: '--lat-sans',
 })
 
 export const metadata: Metadata = {

@@ -8,8 +8,8 @@ const MAX_DISPLAY = 25
 export default function Home({ posts }) {
   return (
     <>
-      <div>
-        <div className=" mt-24 flex w-full max-w-3xl flex-col gap-y-6">
+      <div className='px-2'>
+        <div className=" mt-10 flex w-full max-w-3xl flex-col gap-y-6">
           <h1 className="text-lg font-medium tracking-normal">Welcome to my Digital Garden</h1>
           <p className="text-lg font-medium tracking-normal">
             My name is Mujahid Bappai. This is the little space I carved up for myself on the web
@@ -25,13 +25,13 @@ export default function Home({ posts }) {
         </div>
 
         <div className=" mt-24 ">
-          <h2 className="text-md mb-8 font-bold uppercase tracking-wider">Brain dumps</h2>
+          {/* <h2 className="text-md mb-8 font-bold uppercase tracking-wider">Brain dumps</h2> */}
           <ul>
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((post) => {
               const { slug, date, title, summary, tags } = post
               return (
-                <li key={slug} className="py-4">
+                <li key={slug} className="py-2">
                   <article>
                     <div className="xl:items-baseline xl:space-y-0">
                       <dl className="sr-only">
