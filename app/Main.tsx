@@ -10,7 +10,7 @@ export default function Home({ posts }) {
     <>
       <div className="px-2">
         <div className=" mt-10 flex w-full max-w-3xl flex-col gap-y-6">
-          <h1 className="text-lg font-medium tracking-normal">Welcome to my Digital Garden</h1>
+          <h1 className="text-lg font-medium tracking-normal">Welcome to my Digital Garden!</h1>
           <p className="text-lg font-medium tracking-normal">
             My name is Mujahid Bappai. Senior software enginer at{' '}
             <a
@@ -19,14 +19,12 @@ export default function Home({ posts }) {
             >
               Aya
             </a>{' '}
-            and this is the little space I carved up for myself on the web to dump my thoughts
+            and this is the little space I carved up for myself on the web to dump my thoughts about
+            engineering, design, business and my random thoughts besically
           </p>
           <p className="text-lg font-medium tracking-normal">
-            This is not at all fancy or anything
-          </p>
-          <p className="text-lg font-medium tracking-normal">
-            All articles or post you see on this page might or might not be fully formed so please
-            take everything with a grain of salt
+            All articles or post or whatever you call it might or might not be fully formed (still a
+            work in progress) so please take everything with a grain of salt
           </p>
           <p className="text-lg font-medium tracking-normal">
             This is where I first got introduced to the whole concept of a{' '}
