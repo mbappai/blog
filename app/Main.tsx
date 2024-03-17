@@ -20,11 +20,11 @@ export default function Home({ posts }) {
               Aya
             </a>{' '}
             and this is the little space I carved up for myself on the web to dump my thoughts about
-            engineering, design, business and my random thoughts besically
+            engineering, design, business and my random thoughts.
           </p>
           <p className="text-lg font-medium tracking-normal">
             All articles or post or whatever you call it might or might not be fully formed (still a
-            work in progress) so please take everything with a grain of salt
+            work in progress) so please take everything with a grain of salt.
           </p>
           <p className="text-lg font-medium tracking-normal">
             This is where I first got introduced to the whole concept of a{' '}
