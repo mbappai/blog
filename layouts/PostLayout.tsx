@@ -92,7 +92,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </dd> 
             </dl> */}
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose prose-lg prose-slate max-w-none pb-8 pt-10 dark:prose-invert prose-a:decoration-dotted prose-a:italic prose-a:text-slate-500 prose-p:font-normal prose-p:leading-relaxed prose-li:font-medium">
+              <div className="prose prose-lg prose-slate max-w-none pb-8 pt-10 dark:prose-invert prose-p:font-normal prose-p:leading-relaxed prose-a:italic prose-a:text-slate-500 prose-a:decoration-dotted prose-li:font-medium">
                 {children}
               </div>
 
