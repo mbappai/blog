@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { page: string } }) {
   const pageNumber = parseInt(params.page as string)
   const initialDisplayPosts = posts.slice(
     POSTS_PER_PAGE * (pageNumber - 1),
-    POSTS_PER_PAGE * pageNumber
+    POSTS_PER_PAGE * pageNumber,
   )
   const pagination = {
     currentPage: pageNumber,
