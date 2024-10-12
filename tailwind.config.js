@@ -1,6 +1,6 @@
 // @ts-check
-const { fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+const { fontFamily } = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 /** @type {import("tailwindcss/types").Config } */
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
     './pages/**/*.{js,ts,tsx}',
     './components/**/*.{js,ts,tsx}',
     './layouts/**/*.{js,ts,tsx}',
-    './data/**/*.mdx', 
+    './data/**/*.mdx',
   ],
   darkMode: 'class',
   theme: {
@@ -24,7 +24,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-work-sans)', ...fontFamily.sans],
       },
-      colors: { 
+      colors: {
         primary: colors.pink,
         gray: colors.gray,
       },
@@ -68,4 +68,4 @@ module.exports = {
     },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
-}
+};

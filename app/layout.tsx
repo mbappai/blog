@@ -1,15 +1,15 @@
-import 'css/tailwind.css'
-import 'pliny/search/algolia.css'
+import 'css/tailwind.css';
+import 'pliny/search/algolia.css';
 
-import { Work_Sans, Lato } from 'next/font/google'
-import { Analytics, AnalyticsConfig } from 'pliny/analytics'
-import { SearchProvider, SearchConfig } from 'pliny/search'
-import Header from '@/components/Header'
-import SectionContainer from '@/components/SectionContainer'
-import Footer from '@/components/Footer'
-import siteMetadata from '@/data/siteMetadata'
-import { ThemeProviders } from './theme-providers'
-import { Metadata } from 'next'
+import { Work_Sans, Lato } from 'next/font/google';
+import { Analytics, AnalyticsConfig } from 'pliny/analytics';
+import { SearchProvider, SearchConfig } from 'pliny/search';
+import Header from '@/components/Header';
+import SectionContainer from '@/components/SectionContainer';
+import Footer from '@/components/Footer';
+import siteMetadata from '@/data/siteMetadata';
+import { ThemeProviders } from './theme-providers';
+import { Metadata } from 'next';
 
 const work_sans = Lato({
   subsets: ['latin'],
@@ -18,7 +18,7 @@ const work_sans = Lato({
   variable: '--font-work-sans',
   style: ['italic', 'normal'],
   // variable: '--lat-sans',
-})
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: [siteMetadata.socialBanner],
   },
-}
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -91,5 +91,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </ThemeProviders>
       </body>
     </html>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-import Link from '@/components/Link'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import { formatDate } from 'pliny/utils/formatDate'
+import Link from '@/components/Link';
+import Tag from '@/components/Tag';
+import siteMetadata from '@/data/siteMetadata';
+import { formatDate } from 'pliny/utils/formatDate';
 
-const MAX_DISPLAY = 25
+const MAX_DISPLAY = 25;
 
 export default function Home({ posts }) {
   return (
@@ -43,7 +43,7 @@ export default function Home({ posts }) {
           <ul>
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((post) => {
-              const { slug, date, title, summary, tags } = post
+              const { slug, date, title, summary, tags } = post;
               return (
                 <li key={slug} className="py-2">
                   <article>
@@ -80,7 +80,7 @@ export default function Home({ posts }) {
                     </div>
                   </article>
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
@@ -103,5 +103,5 @@ export default function Home({ posts }) {
         </div>
       )} */}
     </>
-  )
+  );
 }
