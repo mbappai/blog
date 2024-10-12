@@ -12,13 +12,7 @@ export default function Home({ posts }) {
         <div className=" mt-10 flex w-full max-w-3xl flex-col gap-y-6">
           <h1 className="text-lg font-medium tracking-normal">Welcome to my Digital Garden!</h1>
           <p className="text-lg font-medium tracking-normal">
-            My name is Mujahid Bappai. Senior software enginer at{' '}
-            <a
-              className="italic underline decoration-dotted underline-offset-2"
-              href="https://www.ayahq.com/"
-            >
-              Aya
-            </a>{' '}
+            My name is Mujahid Bappai. Senior react enginer 
             and this is the little space I carved up for myself on the web to dump my thoughts about
             engineering, design, business and my random thoughts
           </p>
