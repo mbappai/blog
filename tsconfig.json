@@ -39,7 +39,8 @@
     "**/*.json",
     ".contentlayer/generated",
     ".contentlayer/generated/**/*.json",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "data/blog/resources-on-testing.mdx"
   ],
   "exclude": ["node_modules"]
 }
