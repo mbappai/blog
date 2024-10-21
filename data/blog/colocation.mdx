@@ -1,28 +1,34 @@
 ---
-title: 'My ideal frontend conventions for nextjs14'
+title: 'Files Colocation in Nextjs14'
 date: '2024-03-02'
 tags: ['react', 'typescript', 'nextjs']
 draft: true
 summary: ''
 ---
 
-If I was to ever enforce a guideline for building frontends with nextJS, this would be it
-
-## Colocation
-
 Bring components, utilities and libs very close to where they are being implemented for better maintainability and searchability. In nextjs14, that could easily be achieved
 by creating folders in any route segment like so
 
 ```
+... 
+
  settings
     -- componenets
     -- utilities
+    -- styles
+    -- types
     -- data
     page.tsx
 
  dashboard
     -- componenets
     -- utilities
+    -- hooks
+    -- styles
+    -- types
     -- data
     page.tsx
 ```
+
+Doing this makes it much easier when it comes to reducing redundancy in your project because when you decide to remove everything related to
+the settings page of the product, you just do it in one place instead of opening up every other folder in search of dependencies.
