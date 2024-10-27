@@ -41,6 +41,6 @@
     ".contentlayer/generated/**/*.json",
     ".next/types/**/*.ts",
     "data/blog/resources-on-testing.mdx"
-  ],
+, "data/blog/my-ideal-house-plan.mdx"  ],
   "exclude": ["node_modules"]
 }
